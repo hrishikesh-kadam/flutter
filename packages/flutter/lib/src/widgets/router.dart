@@ -71,6 +71,10 @@ class RouteInformation {
   ///
   /// The state must be serializable.
   final Object? state;
+
+  @override
+  String toString() =>
+      '${objectRuntimeType(this, 'RouteInformation')}(location: "$location", state: $state)';
 }
 
 /// The dispatcher for opening and closing pages of an application.
